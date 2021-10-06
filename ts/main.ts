@@ -41,11 +41,16 @@ namespace tarefas {
                             break;
                         }
 
+                        const termino = new Date(usuarios[i]._tarefas[j]._dtConclusao);
+                        const dtTermino = (termino.getDate() + 1) + "/" + (termino.getMonth() + 1) + "/" + termino.getFullYear();
+
                         switch (usuarios[i]._tarefas[j]._prioridade) {
                             case "ALTA":
+                                
+
                                 html_task += "<div class=\"card-header font-weight-bold text-white\">Tarefa #" + usuarios[i]._tarefas[j]._id + "</div>";
                                     html_task += "<div class=\"card-body\">";
-                                    html_task += "<p class=\"card-text text-white\"><b>Termina em:</b> " + usuarios[i]._tarefas[j]._dtConclusao + "<br><b>Descrição:</b> " + usuarios[i]._tarefas[j]._descricao + "</p>";
+                                    html_task += "<p class=\"card-text text-white\"><b>Termina em:</b> " + dtTermino + "<br><b>Descrição:</b> " + usuarios[i]._tarefas[j]._descricao + "</p>";
 
                                         html_task += "<img class=\"card-text card-image text-white\" src=\"" + usuarios[i]._tarefas[j]._imagem + "\">";
 
@@ -59,7 +64,7 @@ namespace tarefas {
                             case "MEDIA":
                                 html_task += "<div class=\"card-header font-weight-bold\">Tarefa #" + usuarios[i]._tarefas[j]._id + "</div>";
                                     html_task += "<div class=\"card-body\">";
-                                    html_task += "<p class=\"card-text\"><b>Termina em:</b> " + usuarios[i]._tarefas[j]._dtConclusao + "<br><b>Descrição:</b> " + usuarios[i]._tarefas[j]._descricao + "</p>";
+                                    html_task += "<p class=\"card-text\"><b>Termina em:</b> " + dtTermino + "<br><b>Descrição:</b> " + usuarios[i]._tarefas[j]._descricao + "</p>";
 
                                         html_task += "<img class=\"card-text card-image text-white\" src=\"" + usuarios[i]._tarefas[j]._imagem + "\">";
 
@@ -73,7 +78,7 @@ namespace tarefas {
                             case "BAIXA":
                                 html_task += "<div class=\"card-header font-weight-bold text-white\">Tarefa #" + usuarios[i]._tarefas[j]._id + "</div>";
                                     html_task += "<div class=\"card-body\">";
-                                        html_task += "<p class=\"card-text text-white\"><b>Termina em:</b> " + usuarios[i]._tarefas[j]._dtConclusao + "<br><b>Descrição:</b> " + usuarios[i]._tarefas[j]._descricao + "</p>";
+                                        html_task += "<p class=\"card-text text-white\"><b>Termina em:</b> " + dtTermino + "<br><b>Descrição:</b> " + usuarios[i]._tarefas[j]._descricao + "</p>";
 
                                         html_task += "<img class=\"card-text card-image text-white\" src=\"" + usuarios[i]._tarefas[j]._imagem + "\">";
 
