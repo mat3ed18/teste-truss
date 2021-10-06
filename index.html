@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Teste DBJ</title>
+    <title>TODO's</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="source/css/style.css">
@@ -67,14 +67,14 @@
                             <div id="descHelp" class="form-text">Digite a descrição da tarefa.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="estadoTarefa" class="form-label">Estado</label>
-                            <select class="form-select form-control" id="estadoTarefa" aria-label="Default select example" aria-describedby="descEstado">
-                                <option value="" selected>Selecione um estado</option>
-                                <option value="PENDENTE">PENDENTE</option>
-                                <option value="EM ANDAMENTO">EM ANDAMENTO</option>
-                                <option value="FINALIZADA">FINALIZADA</option>
+                            <label for="prioridadeTarefa" class="form-label">Prioridade</label>
+                            <select class="form-select form-control" id="prioridadeTarefa" aria-label="Default select example" aria-describedby="descPrioridade">
+                                <option value="" selected>Selecione a prioridade</option>
+                                <option value="ALTA">ALTA</option>
+                                <option value="MEDIA">MÉDIA</option>
+                                <option value="BAIXA">BAIXA</option>
                             </select>
-                            <div id="descEstado" class="form-text">Selecione o estado da tarefa.</div>
+                            <div id="descPrioridade" class="form-text">Selecione a prioridade da tarefa.</div>
                         </div>
                         <div class="mb-3">
                             <label for="usuarioTarefa" class="form-label">Usuário (autor)</label>
@@ -82,6 +82,16 @@
                                 <option value="" selected>Selecione um autor</option>
                             </select>
                             <div id="userTask" class="form-text">Selecione o autor da tarefa.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="conclusao" class="form-label">Data de conclusão</label>
+                            <input type="date" class="form-control" id="conclusao" aria-describedby="descConc"/>
+                            <div id="descConc" class="form-text">Insira a data de conclusão da tarefa.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagem" class="form-label">Imagem</label>
+                            <input type="text" class="form-control" id="imagem" aria-describedby="descImagem"/>
+                            <div id="descImagem" class="form-text">Insira o URL da imagem.</div>
                         </div>
                     </div>
                 </div>
@@ -109,14 +119,14 @@
                             <div id="descHelp" class="form-text">Digite a descrição da tarefa.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="estadoTarefa" class="form-label">Estado</label>
-                            <select class="form-select form-control" id="estadoTarefa" aria-label="Default select example" aria-describedby="descEstado">
-                                <option value="" selected>Selecione um estado</option>
+                            <label for="prioridadeTarefa" class="form-label">Prioridade</label>
+                            <select class="form-select form-control" id="prioridadeTarefa" aria-label="Default select example" aria-describedby="descPrioridade">
+                                <option value="" selected>Selecione a prioridade</option>
                                 <option value="PENDENTE">PENDENTE</option>
                                 <option value="EM ANDAMENTO">EM ANDAMENTO</option>
                                 <option value="FINALIZADA">FINALIZADA</option>
                             </select>
-                            <div id="descEstado" class="form-text">Selecione o estado da tarefa.</div>
+                            <div id="descPrioridade" class="form-text">Selecione a prioridade da tarefa.</div>
                         </div>
                     </div>
                 </div>

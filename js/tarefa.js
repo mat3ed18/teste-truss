@@ -2,10 +2,12 @@
 var tarefas;
 (function (tarefas) {
     var Tarefa = /** @class */ (function () {
-        function Tarefa(id, descricao, estado) {
+        function Tarefa(id, descricao, estado, dtConclusao, imagem) {
             this._id = id;
             this._descricao = descricao;
-            this._estado = estado;
+            this._prioridade = estado;
+            this.dtConclusao = dtConclusao;
+            this._imagem = imagem;
         }
         Object.defineProperty(Tarefa.prototype, "id", {
             get: function () {
@@ -27,12 +29,32 @@ var tarefas;
             enumerable: false,
             configurable: true
         });
-        Object.defineProperty(Tarefa.prototype, "estado", {
+        Object.defineProperty(Tarefa.prototype, "prioridade", {
             get: function () {
-                return this._estado;
+                return this._prioridade;
             },
-            set: function (estado) {
-                this._estado = estado;
+            set: function (prioridade) {
+                this._prioridade = prioridade;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(Tarefa.prototype, "dtConclusao", {
+            get: function () {
+                return this._dtConclusao;
+            },
+            set: function (dtConclusao) {
+                this._dtConclusao = dtConclusao;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(Tarefa.prototype, "imagem", {
+            get: function () {
+                return this._imagem;
+            },
+            set: function (imagem) {
+                this._imagem = imagem;
             },
             enumerable: false,
             configurable: true

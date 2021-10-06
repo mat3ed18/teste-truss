@@ -2,12 +2,16 @@ namespace tarefas {
     export class Tarefa {
         private _id: number;
         private _descricao: string;
-        private _estado: TarefaEstado;
+        private _prioridade: TarefaEstado;
+        private _dtConclusao: string;
+        private _imagem: string;
 
-        constructor (id: number, descricao: string, estado: TarefaEstado) {
+        constructor (id: number, descricao: string, estado: TarefaEstado, dtConclusao: string, imagem: string) {
             this._id = id;
             this._descricao = descricao;
-            this._estado = estado;
+            this._prioridade = estado;
+            this.dtConclusao = dtConclusao;
+            this._imagem = imagem;
         }
 
         get id () {
@@ -26,12 +30,28 @@ namespace tarefas {
             this._descricao = descricao;
         }
         
-        get estado () {
-            return this._estado;
+        get prioridade () {
+            return this._prioridade;
         }
 
-        set estado (estado: TarefaEstado) {
-            this._estado = estado;
-        }                
+        set prioridade (prioridade: TarefaEstado) {
+            this._prioridade = prioridade;
+        }
+        
+        get dtConclusao () {
+            return this._dtConclusao;
+        }
+
+        set dtConclusao (dtConclusao: string) {
+            this._dtConclusao = dtConclusao;
+        }
+
+        get imagem () {
+            return this._imagem;
+        }
+
+        set imagem (imagem: string) {
+            this._imagem = imagem;
+        }
     }
 }
