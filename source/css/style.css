@@ -1,0 +1,27 @@
+.card {
+    margin: 0%;
+    padding: 0%;
+}
+
+#alertMsg {
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.addTask {
+    margin-right: 5%;
+}
+
+.menuBtns {
+    width: 21%;
+}
+
+.card-text {
+    font-size: 13px;
+}
+
+.main_tasks {
+    padding: 1%;
+}
