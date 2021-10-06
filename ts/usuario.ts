@@ -41,7 +41,7 @@ namespace tarefas {
         public estadoTarefa(idTarefa: number, estadoTarefa: TarefaEstado) {
             for (let i = 0; i < this._tarefas.length; i++) {
                 if (this._tarefas[i].id == idTarefa) {
-                    this._tarefas[i].estado = estadoTarefa;
+                    this._tarefas[i].prioridade = estadoTarefa;
                 }
             }
         }
