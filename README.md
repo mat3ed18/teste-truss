@@ -18,11 +18,12 @@ Este teste foi desenvolvido em TypeScript e pode ser executado no GitPod, adicio
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/51000704/136246380-e2eb6015-1330-4c0e-a80c-2be71911cf1c.png)
+
 |             |             |               |
 |   :----:    |    :----:   |    :----:     |
 | ![image](https://user-images.githubusercontent.com/51000704/136244065-0d459bcf-64b5-4382-8273-be5fa1737a43.png)  | ![image](https://user-images.githubusercontent.com/51000704/136244183-d557bec8-e80b-47ea-b13b-36df5fead348.png)  |  ![image](https://user-images.githubusercontent.com/51000704/136244449-c1cabbb2-f966-4ba9-86f5-7f354ec2b942.png)  |
 
-![image](https://user-images.githubusercontent.com/51000704/136246380-e2eb6015-1330-4c0e-a80c-2be71911cf1c.png)
 
 
 
