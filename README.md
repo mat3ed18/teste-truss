@@ -1,6 +1,6 @@
 ## TODO's - Teste TRUSS
 
-Este teste foi desenvolvido em React Native e pode ser executado no GitPod, adicionando o prefixo `gitpod.io/#/` no início deste URL ou no Visual Studio Code, clonando este repositório e seguindo todas as instruções deste pequeno manual.
+Este teste foi desenvolvido em TypeScript e pode ser executado no GitPod, adicionando o prefixo `gitpod.io/#/` no início deste URL ou no Visual Studio Code, clonando este repositório e seguindo todas as instruções deste pequeno manual.
 
 ## execução
 
